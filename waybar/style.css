@@ -33,7 +33,7 @@ window#waybar {
 
 #workspaces button.active {
 
-    background-color: rgba(170, 147, 96, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
