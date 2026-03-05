@@ -1,40 +1,29 @@
 {
-  "layer": "top",
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["battery"],
-  "hyprland/workspaces": {
-        "format": "{icon}",
-	"on-click": "activate",
-	"format-icons": {
-		"1": "⬤",
-  	        "2": "⬤",
-  	        "3": "⬤",
-  	        "4": "⬤",
-  	        "5": "⬤",
-  	        "default": "⬤"
-  	},
-	"persistent-workspaces": {
-		"1": [],
-		"2": [],
-		"3": [],
-		"4": [],
-		"5": []
-	},
-        "workspace-taskbar": {
-            "enable": true,
-	    "format": "{icon}",
-	    "window-rewrite-default": "󰅀",
-            "icon-size": 16,
-            "icon-theme": "Numix-Circle",
-	    "update-active-window": true
-        }
-    },
-	"battery": {
-		"states": {
-			"warning": 50,
-			"critical": 15
-		}
-	}
-
-}   
+  "layer": "overlay",
+  "position": "top",
+  "exclusive": false,
+  "margin-bottom": 6,
+  "margin-right": 0,
+  "modules-right": [
+    "battery",
+    "clock"
+  ],
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+  "clock": {
+    "format": "{:%m:%d:%H:%M}"
+  }
+}
