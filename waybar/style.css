@@ -1,6 +1,6 @@
 * {
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 13px;
+  font-family: HackNerdFont;
+  font-size: 10px;
 }
 
 window#waybar {
@@ -11,7 +11,7 @@ window#waybar {
 .modules-right {
   background: rgba(30, 30, 30, 0.9);
   border-radius: 00px;
-  padding: 2px 2px;
+  padding: 1px 2px;
 }
 
 #battery,

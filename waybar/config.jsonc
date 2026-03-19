@@ -24,6 +24,6 @@
     }
   },
   "clock": {
-    "format": "{:%m:%d:%H:%M}"
+    "format": "{:%H:%M}"
   }
 }
